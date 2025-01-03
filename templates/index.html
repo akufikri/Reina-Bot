@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Remove Background</title>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white p-6 rounded-lg shadow-lg w-96">
+    <h1 class="text-2xl font-bold text-center mb-4">Remove Background</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data" class="space-y-4">
+      <div>
+        <label for="files" class="block text-sm font-medium text-gray-700">Upload Foto</label>
+        <input type="file" id="files" name="files[]" multiple required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+      </div>
+      <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+        Remove Background
+      </button>
+    </form>
+  </div>
+</body>
+</html>
